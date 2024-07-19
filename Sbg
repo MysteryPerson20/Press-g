@@ -1,0 +1,9 @@
+local args = {
+    [1] = {
+        ["MoveDirection"] = Vector3.zero,
+        ["Goal"] = "KeyPress",
+        ["Key"] = Enum.KeyCode.G
+    }
+}
+
+game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
